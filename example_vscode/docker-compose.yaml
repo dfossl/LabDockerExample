@@ -5,10 +5,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: vscodeexample
     ports:
       - 127.0.0.1:9922:22
     volumes:
-      - .:/code/
+      - ./code/:/code/
     environment:
       DEV: 'True'
-    command: /bin/sh -c "while sleep 1000; do :; done"
