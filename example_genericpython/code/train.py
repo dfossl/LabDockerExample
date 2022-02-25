@@ -1,5 +1,4 @@
-import os
-import pandas as pd
+
 from sklearn import linear_model
 from sklearn import datasets
 import pickle as pl
@@ -13,7 +12,7 @@ import numpy as np
 # docker create --name train_model -v C:\Users\dfoss\Documents\Projects\LabDockerExample\example_genericpython\code:/code generic_python python train.py
 # """
 
-print("Hello")
+print("Hello world")
 
 diabetes = datasets.load_diabetes()
 
